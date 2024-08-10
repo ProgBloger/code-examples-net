@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VisitorForMongoDb.Application\VisitorForMongoDb.Application.csproj" />
+    <ProjectReference Include="..\VisitorForMongoDb.Core\VisitorForMongoDb.Core.csproj" />
+    <ProjectReference Include="..\VisitorForMongoDb.Infrastructure\VisitorForMongoDb.Infrastructure.csproj" />
+    <ProjectReference Include="..\VisitorForMongoDb.Interfaces\VisitorForMongoDb.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
